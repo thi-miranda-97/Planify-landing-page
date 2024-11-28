@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --dark: #0b0014;
+  --white: #ffffff;
+  --yellow: #ffb601;
+  --purple: #7520cf;
+  --light: #e6e6e6;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -18,4 +21,98 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  html {
+    @apply bg-white;
+  }
+
+  body {
+    @apply text-[16px] text-dark;
+  }
+
+  a {
+    @apply no-underline text-dark cursor-pointer py-1;
+  }
+
+  img {
+    @apply inline-block max-w-full;
+  }
+
+  button {
+    @apply bg-none;
+  }
+
+  /* input {
+    @apply tracking-[-0.03em];
+  } */
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-[1300px] px-6 max-xl:px-8 max-lg:px-6 max-sm:px-3;
+  }
+  /* START of Typography */
+  .h-num {
+    @apply text-[36px];
+  }
+  .h1 {
+    @apply text-[80px] font-semibold leading-[90px];
+  }
+
+  .h2 {
+    @apply text-[48px] font-semibold leading-[64px];
+  }
+
+  .h3 {
+    @apply text-[24px] font-semibold leading-[48px];
+  }
+
+  .h4 {
+    @apply text-[20px] font-semibold leading-[52px];
+  }
+
+  .h5 {
+    @apply text-[32px] font-semibold leading-[40px];
+  }
+  .tags {
+    @apply text-[12px];
+  }
+  .logo {
+    @apply text-[18px];
+  }
+
+  .body-1 {
+    @apply text-[18px] text-light leading-[36px];
+  }
+
+  .body-2 {
+    @apply text-[14px] text-gray-400 leading-[32px];
+  }
+
+  .body-3 {
+    @apply text-[12px] text-gray-300;
+  }
+}
+
+@layer components {
+  .before-hover {
+    @apply before:absolute before:content-[''] before:block before:w-1 before:h-full before:bg-gray-400 before:top-0 before:left-0 before:transition hover:before:bg-purple hover:before:scale-y-100  before:origin-top-left before:ease-in-out;
+  }
+  .after-hover {
+    @apply after:absolute after:content-[''] after:block after:bg-purple after:h-[1px] after:bottom-0 after:left-0 after:transition hover:after:w-full hover:after:scale-x-100 after:scale-x-0 after:origin-top-left after:ease-in-out;
+  }
+  .transition {
+    @apply transition-all duration-300;
+  }
+  .direction-reverse {
+    @apply animate-marquee animatio;
+  }
 }
