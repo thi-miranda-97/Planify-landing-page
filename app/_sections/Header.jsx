@@ -53,7 +53,7 @@ export default function Header() {
             </svg>
           </button>
           {isOpen && (
-            <div className="absolute top-14 left-0 w-full bg-white shadow-lg">
+            <div className="absolute top-14 left-0 w-full bg-white shadow-lg h-screen">
               <ul className="flex flex-col items-center justify-center py-4">
                 <Link
                   href="/"

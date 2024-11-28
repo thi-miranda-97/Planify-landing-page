@@ -18,7 +18,7 @@ export default function FAQ({ faq }) {
           </div>
           <h2 className="h2 lg:mb-12">Frequently Asked Questions</h2>
         </div>
-        <div>
+        <div className="mb-6">
           <p className="body-2 mb-4">
             Need help or have questions? Contact our team for personalized
             assistance!
@@ -31,11 +31,11 @@ export default function FAQ({ faq }) {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-items-start gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-items-start gap-4">
         {faq.map((item, index) => (
           <div
             key={index}
-            className="bg-gray-200 text-dark shadow-sm rounded-md w-full sm:w-[500px] py-4 px-4"
+            className="bg-gray-200 text-dark shadow-sm rounded-md w-full sm:w-full md:w-[350px] lg:w-[470px] xl:w-[500px] py-4 px-4"
           >
             <div
               onClick={() => toggleClick(index)}

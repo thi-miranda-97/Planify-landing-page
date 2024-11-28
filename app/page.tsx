@@ -4,7 +4,23 @@ import Features from "@/app/_sections/Features";
 import Testimonials from "@/app/_sections/Testimonials";
 import Pricing from "@/app/_sections/Pricing";
 import FAQ from "@/app/_sections/FAQ";
+import Download from "@/app/_sections/Download";
+import Footer from "@/app/_sections/Footer";
 
+export default function page() {
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Features />
+      <Testimonials testimonials={testimonialsData} />
+      <Pricing plans={plans} />
+      <FAQ faq={faq} />
+      <Download />
+      <Footer />
+    </>
+  );
+}
 const testimonialsData = [
   {
     text: "Planify keeps me on track every day. Couldn't be more productive!",
@@ -203,16 +219,3 @@ const faq = [
       "You can reach our support team by emailing support@planify.com or by using the live chat feature in the app.",
   },
 ];
-
-export default function page() {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <Features />
-      <Testimonials testimonials={testimonialsData} />
-      <Pricing plans={plans} />
-      <FAQ faq={faq} />
-    </>
-  );
-}

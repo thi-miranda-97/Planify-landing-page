@@ -11,7 +11,7 @@ export default function Pricing({ plans }) {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`max-w-full h-full shadow-2xl rounded-xl py-4 px-10 text-dark overflow-hidden hover:translate-y-[-12px] ${
+            className={`max-w-full h-full shadow-2xl rounded-xl py-10 px-10 text-dark overflow-hidden hover:translate-y-[-12px] ${
               plan.isHighlighted
                 ? "bg-gradient-to-b from-purple to-dark text-white"
                 : "bg-white text-dark"
