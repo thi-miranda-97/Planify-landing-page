@@ -3,7 +3,7 @@ import app from "@/public/images/app.png";
 
 export default function Hero() {
   return (
-    <section className="rounded bg-dark text-center my-32 px-8 md:px-16 lg:px-32 py-20">
+    <section className="rounded bg-dark text-center my-20 lg:my-32 px-6 md:px-12 lg:px-32 py-8 md:py-20">
       <h1 className="h1 uppercase mb-7 md:mb-4 lg:mb-7 text-5xl md:text-6xl lg:text-7xl max-lg:h2 bg-gradient-to-r from-purple to-yellow text-transparent bg-clip-text inline-block">
         Next-Level Productivity
       </h1>

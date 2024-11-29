@@ -5,7 +5,10 @@ import download from "@/public/images/download.png";
 
 export default function Download() {
   return (
-    <section className="mt-32 mb-20 bg-dark pt-10 px-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <section
+      id="download"
+      className="my-20 lg:my-32 bg-dark pt-10 px-10 grid grid-cols-1 lg:grid-cols-2 gap-8"
+    >
       <div>
         <h2 className="h2 text-white">Take Planify Everywhere You Go</h2>
         <p className="body-2 mb-6">

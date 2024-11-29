@@ -3,7 +3,7 @@ import features from "@/public/images/features.png";
 
 export default function Features() {
   return (
-    <section className="container overflow-x-hidden">
+    <section id="features" className="container overflow-x-hidden">
       <div className="flex items-center justify-center my-4">
         <span className="tags uppercase text-purple bg-light py-2 px-6 ">
           OUR FEATURES

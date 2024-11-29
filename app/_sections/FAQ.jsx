@@ -8,15 +8,15 @@ export default function FAQ({ faq }) {
     setClicked(index);
   };
   return (
-    <section className="container mt-32">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between gap-12">
+    <section id="faqs" className="container mx-20 lg:mx-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between gap-2 lg:gap-12">
         <div>
           <div className="flex items-center justify-start my-4">
             <span className="tags uppercase text-purple bg-light py-2 px-6 ">
               FAQs
             </span>
           </div>
-          <h2 className="h2 lg:mb-12">Frequently Asked Questions</h2>
+          <h2 className="h2">Frequently Asked Questions</h2>
         </div>
         <div className="mb-6">
           <p className="body-2 mb-4">
@@ -42,7 +42,7 @@ export default function FAQ({ faq }) {
               className="flex flex-row items-start justify-between cursor-pointer"
             >
               <p
-                className={`text-[16px] ${
+                className={`text-[12px] lg:text-[16px] ${
                   clicked === index ? "text-purple font-semibold" : "text-dark"
                 }`}
               >
@@ -54,7 +54,7 @@ export default function FAQ({ faq }) {
             </div>
 
             <div
-              className={`mt-2 text-gray-700 text-[14px] overflow-hidden transition ${
+              className={`mt-2 text-gray-700 text-[10px] lg:text-[14px] overflow-hidden transition ${
                 clicked === index
                   ? "h-auto max-h-[9999px] ease-in"
                   : "max-h-0 ease-in"

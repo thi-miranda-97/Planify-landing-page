@@ -12,22 +12,25 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-50 flex items-center justify-between w-full py-4 md:py-6 lg:py-10 px-4 md:px-10 bg-white">
-      <div className="container flex items-center justify-between h-14 md:h-16 max-lg:px-5">
+    <header className="fixed top-0 left-0 z-50 flex items-center justify-between w-[100vw] py-4 px-4 md:py-6 lg:py-10 bg-white">
+      <div className="container w-full flex items-center justify-between h-14 md:h-16">
         {/* THE LOGO */}
-        <Link href="/" className="logo font-semibold ">
-          <span className="inline-block ">
-            <Image
-              src={logo}
-              alt="logo"
-              quality={100}
-              className="w-12 h-auto"
-            />
-          </span>
-          Planify
-        </Link>
+        <div className="flex items-center space-x-2">
+          <Link href="/" className="logo font-semibold ">
+            <span className="inline-block ">
+              <Image
+                src={logo}
+                alt="logo"
+                quality={100}
+                className="w-12 h-auto"
+              />
+            </span>
+            Planify
+          </Link>
+        </div>
+
         {/* MOBILE NAV */}
-        <div className="md:hidden">
+        <div className="md:hidden flex-shrink-0">
           <button
             className="hover:text-gray-900 focus:outline-none focus:text-gray-900"
             onClick={toggleMenu}
@@ -56,31 +59,31 @@ export default function Header() {
             <div className="absolute top-14 left-0 w-full bg-white shadow-lg h-screen">
               <ul className="flex flex-col items-center justify-center py-4">
                 <Link
-                  href="/"
+                  href="#features"
                   className="my-2 text-gray-600 hover:text-gray-900 transition"
                 >
                   Feature
                 </Link>
                 <Link
-                  href="/"
+                  href="#pricing"
                   className="my-2 text-gray-600 hover:text-gray-900 transition"
                 >
                   Pricing
                 </Link>
                 <Link
-                  href="/"
+                  href="#testimonial"
                   className="my-2 text-gray-600 hover:text-gray-900 transition"
                 >
                   Testimonials
                 </Link>
                 <Link
-                  href="/"
+                  href="#faqs"
                   className="my-2 text-gray-600 hover:text-gray-900 transition"
                 >
                   FAQ
                 </Link>
                 <Link
-                  href="/"
+                  href="#download"
                   className="my-2 text-gray-600 hover:text-gray-900 transition"
                 >
                   Download
@@ -91,33 +94,33 @@ export default function Header() {
         </div>
         {/* DESKTOP NAVBAR */}
         <nav className="hidden md:block">
-          <ul className="flex items-center justify-between max-lg:block max-lg:px-12">
+          <ul className="flex items-center justify-between max-lg:block max-lg:px-12 space-x-8">
             <Link
-              href="/"
+              href="#features"
               className="mr-8 md:mr-2 lg:mr-6 relative after-hover transition"
             >
               Feature
             </Link>
             <Link
-              href="/"
+              href="#pricing"
               className="mx-8 md:mx-2 lg:mx-6 relative after-hover transition"
             >
               Pricing
             </Link>
             <Link
-              href="/"
+              href="#testimonial"
               className="mx-8 md:mx-2 lg:mx-6 relative after-hover transition"
             >
               Testimonials
             </Link>
             <Link
-              href="/"
+              href="#faqs"
               className="mx-8 md:mx-2 lg:mx-6 relative after-hover transition"
             >
               FAQ
             </Link>
             <Link
-              href="/"
+              href="#download"
               className="ml-8 md:ml-2 lg:ml-6 relative after-hover transition"
             >
               Download

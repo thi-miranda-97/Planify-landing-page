@@ -1,6 +1,9 @@
 export default function Testimonials({ testimonials }) {
   return (
-    <section className="text-white my-32 bg-cover bg-center w-screen h-[400px] bg-[url('/images/bg-img.jpg')] px-6 py-10">
+    <section
+      id="testimonial"
+      className="text-white my-20 lg:my-32 bg-cover bg-center w-screen h-[400px] bg-[url('/images/bg-img.jpg')] px-6 py-10"
+    >
       <h2 className="h2 mb-8 font-medium bg-gradient-to-r from-yellow to-purple inline-block text-transparent bg-clip-text">
         Our Customers love Planify!
       </h2>

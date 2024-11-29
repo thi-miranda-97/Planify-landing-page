@@ -1,6 +1,6 @@
 export default function Pricing({ plans }) {
   return (
-    <section className="container my-32">
+    <section id="pricing" className="container my-20 lg:my-32">
       <div className="flex items-center justify-start my-4">
         <span className="tags uppercase text-purple bg-light py-2 px-6 ">
           Pricing List
